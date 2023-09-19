@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(232, 232, 15);
+}
+.milestone-card {
+  display: inline-block;
+  background-color: rgb(28, 181, 205);
+  box-shadow: 5pc 2pc 10px rgba(226, 40, 211, 0.921);
+  width: 500px;
+  height: auto;
+  border-radius: 9px;
+  padding: 10px;
+  margin: 30px 60px;
+}
+a:hover {
+  color: brown;
+}
+
+ol {
+  font-weight: 100;
+}
