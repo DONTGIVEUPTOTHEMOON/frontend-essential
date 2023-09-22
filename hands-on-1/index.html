@@ -3,44 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
     <title>Document</title>
+    <script src="indexjs.js"></script>
   </head>
   <body>
+    <nav>
+      <p id="p">cleavers academy</p>
+      <button>Login</button>
+    </nav>
+
     <h1>Hello,world</h1>
     <h2>This is hending 2</h2>
     <p>This is a paragraph</p>
+
+    <div class="milestone-container">
+      <!-- * Fronted Milestones -->
+      <div class="milestone-card">
+        <h2>Fronted Milestones</h2>
+        <ol id="frontend-milestone">
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>Css</li>
+          <li>React</li>
+          <li>I can do a Website BonBon by myself.</li>
+        </ol>
+        <a href="https://bonbon-living.com/">view course info</a>
+      </div>
+
+      <!-- * Backend Milestones -->
+      <div class="milestone-card">
+        <h2 class="milestone important">Backend Milestones!</h2>
+        <ol id="backend-milestone">
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Database</li>
+          <li>Docker</li>
+          <li>I can do a Website BonBon by myself.</li>
+        </ol>
+        <a href="https://bonbon-living.com/">view course info</a>
+      </div>
+    </div>
     <hr />
-
-    <!-- * Fronted Milestones -->
-    <div class="milestone-card">
-      <h2 class="milestone important">Fronted Milestones</h2>
-      <ol>
-        <li>Javascript</li>
-        <li>HTML</li>
-        <li>Css</li>
-        <li>React</li>
-        <li>I can do a Website BonBon by myself.</li>
-      </ol>
-      <a href="https://bonbon-living.com/">view course info</a>
-    </div>
-
-    <!-- * Backend Milestones -->
-    <div class="milestone-card">
-      <h2 class="milestone important">Backend Milestones!</h2>
-      <ol>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>Database</li>
-        <li>Docker</li>
-        <li>I can do a Website BonBon by myself.</li>
-      </ol>
-      <a href="https://bonbon-living.com/">view course info</a>
-    </div>
     <div>
-      <hr />
-      <p>From</p>
-      <from>
+      <p>Form</p>
+      <form>
         <label for="username">Username:</label>
         <input type="text" id="username" required />
 
@@ -51,7 +58,16 @@
         <input type="password" id="password" required />
 
         <button type="submit">Login</button>
-      </from>
+        <label for="frontend">Add Front-end Milestone:</label>
+        <input type="text" id="frontend" />
+        <button id="add-front">Submit</button>
+      </form>
+      <br />
+      <form>
+        <label for="backend">Add Back-end Milestone:</label>
+        <input type="text" id="backend" />
+        <button id="add-back">Submit</button>
+      </form>
     </div>
   </body>
 </html>
